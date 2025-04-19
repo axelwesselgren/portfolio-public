@@ -54,8 +54,8 @@ node -v
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/axelwesselgren/stackster-public.git
-   cd stackster-public
+   git clone https://github.com/axelwesselgren/portfolio-public.git
+   cd portfolio-public
    ```
 
 2. **Install node packages**
@@ -90,7 +90,7 @@ You're now ready to run the application!
 - [ ] Add proper documentation
 - [ ] Restructure project to adhere to modern practices
 
-See the [open issues](https://github.com/axelwesselgren/stackster-public/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/axelwesselgren/portfolio-public/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
