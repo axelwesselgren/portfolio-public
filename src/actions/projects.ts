@@ -27,6 +27,7 @@ export async function getProjects() {
 }
 
 export async function getFeaturedProjects() {
+  
   return executeQuery<Project[]>(async (sql) => {
     const result = await sql`
       SELECT 
