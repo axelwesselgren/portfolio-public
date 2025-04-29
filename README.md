@@ -13,10 +13,6 @@
   </p>
 </div>
 
-### ⚠️ Disclaimer
-
-**This project is a work in progress**
-
 ## About The Project
 
 <img src="images/portfolio-full.png" alt="Logo">
@@ -77,7 +73,6 @@ You're now ready to run the application!
 
 ## Roadmap
 
-- [ ] Complete project
 - [ ] Add proper documentation
 
 See the [open issues](https://github.com/axelwesselgren/portfolio-public/issues) for a full list of proposed features (and known issues).
