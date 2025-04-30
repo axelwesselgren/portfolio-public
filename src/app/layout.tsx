@@ -11,9 +11,43 @@ const inter = Inter({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
-  title: "Axel Lönnby Wesselgren",
-  description: "Personal portfolio of Axel Lönnby Wesselgren",
+  title: {
+    default: "Axel Lönnby Wesselgren | Portfolio",
+    template: "%s | Axel Lönnby Wesselgren",
+  },
+  description: "Personal portfolio and projects by Axel Lönnby Wesselgren.",
+  keywords: ["developer", "portfolio", "React", "Next.js", "frontend developer", "web development", "full-stack developer"],
+  authors: [{ name: "Axel Lönnby Wesselgren" }],
+  creator: "Axel Lönnby Wesselgren",
+  publisher: "Axel Lönnby Wesselgren",
+  metadataBase: new URL("https://axelwesselgren.dev"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://axelwesselgren.dev",
+    title: "Axel Lönnby Wesselgren | Portfolio",
+    description: "Personal portfolio and projects by Axel Lönnby Wesselgren",
+    siteName: "Axel Lönnby Wesselgren",
+    images: [
+      {
+        url: "https://axelwesselgren.dev/portfolio.png",
+        width: 1200,
+        height: 630,
+        alt: "Axel Lönnby Wesselgren Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Axel Lönnby Wesselgren | Portfolio",
+    description: "Personal portfolio and projects by Axel Lönnby Wesselgren",
+    images: [`https://axelwesselgren.dev/portfolio.png`],
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${inter.className} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         <QueryProviders>
           <ThemeProvider
             attribute="class"
