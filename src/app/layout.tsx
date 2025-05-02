@@ -15,10 +15,7 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: {
-    default: "Axel Lönnby Wesselgren | Portfolio",
-    template: "%s | Axel Lönnby Wesselgren",
-  },
+  title: "Axel Lönnby Wesselgren",
   description: "Personal portfolio and projects by Axel Lönnby Wesselgren.",
   keywords: ["developer", "portfolio", "React", "Next.js", "frontend developer", "web development", "full-stack developer"],
   authors: [{ name: "Axel Lönnby Wesselgren" }],
