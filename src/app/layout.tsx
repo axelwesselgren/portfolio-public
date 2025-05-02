@@ -5,6 +5,7 @@ import { QueryProviders } from "@/context/query-provider";
 import { Main } from "@/components/layout/main";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "@/app/globals.css";
 
 const inter = Inter({
@@ -69,6 +70,7 @@ export default function RootLayout({
             <Main>{children}</Main>
             <Toaster />
             <Analytics mode="production" />
+            <SpeedInsights />
           </ThemeProvider>
         </QueryProviders>
       </body>
