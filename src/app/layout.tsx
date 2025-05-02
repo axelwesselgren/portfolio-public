@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { QueryProviders } from "@/context/query-provider";
 import { Main } from "@/components/layout/main";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react";
 import "@/app/globals.css";
 
 const inter = Inter({
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Axel Lönnby Wesselgren",
     images: [
       {
-        url: "https://axelwesselgren.dev/portfolio.png",
+        url: "https://axelwesselgren.dev/images/portfolio.png",
         width: 1200,
         height: 630,
         alt: "Axel Lönnby Wesselgren Portfolio",
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Axel Lönnby Wesselgren | Portfolio",
     description: "Personal portfolio and projects by Axel Lönnby Wesselgren",
-    images: [`https://axelwesselgren.dev/portfolio.png`],
+    images: [`https://axelwesselgren.dev/images/portfolio.png`],
   },
 };
 
@@ -67,6 +68,7 @@ export default function RootLayout({
           >
             <Main>{children}</Main>
             <Toaster />
+            <Analytics mode="production" />
           </ThemeProvider>
         </QueryProviders>
       </body>
